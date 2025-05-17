@@ -46,17 +46,39 @@ header a:hover {
     center/cover no-repeat;
   height: 100vh;
   position: relative;
-}
-.overlay {
-  background: rgba(255, 250, 240, 0.45);
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 32px;
+  justify-content: center;
 }
+
+.hero-text h1 {
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-size: 48px;
+  color: hsl(25, 20%, 20%);
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  color: hsl(25, 20%, 20%);
+}
+
+
+.overlay {
+  background: rgba(255, 250, 240, 0.65);
+  backdrop-filter: blur(6px);
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 720px;
+  width: 90%;
+  z-index: 2;
+}
+
 h1 {
   font-size: 48px;
   margin: 0;
@@ -503,4 +525,49 @@ footer {
   .arrow-img {
     display: none;
   }
+}
+
+
+.phone-image {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.top-right {
+  top: -180px;
+  right: -200px;
+  width: 540px;
+  transform: rotate(-18deg);
+}
+
+.bottom-left {
+  bottom: -80px;
+  left: -140px;
+  width: 460px;
+  transform: rotate(22deg);
+}
+
+@media (max-width: 768px) {
+  .phone-image {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 248, 240, 0.7), rgba(244, 230, 200, 0.5));
+  z-index: 0;
 }
