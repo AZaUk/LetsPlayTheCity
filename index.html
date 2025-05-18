@@ -18,14 +18,20 @@
     <a href="#team" class="header_button">Team</a>
 <!--    <a href="#download" class="header_button">Download</a>-->
   </header>
+  
+  <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(20deg)"/>
+  <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(40deg)"/>
+  <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(60deg)"/>
+  <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(80deg)"/>
+  <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(100deg)"/>
+  <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(120deg)"/>
 
   <section class="hero">
-    <img class="phone-image top-right" src="images/phone_mockup.png" alt="Phone preview top">
-    <img class="phone-image bottom-left" src="images/phone_mockup.png" alt="Phone preview bottom">
+    <!--<img class="phone-image top-right" src="images/phone_mockup.png" alt="Phone preview top">-->
+    <!--<img class="phone-image bottom-left" src="images/phone_mockup.png" alt="Phone preview bottom">-->
     <div class="overlay">
-      <h1 class="fade-in">Let's play the city</h1>
-      <h1 class="fade-in">Discover Vilanova </br> in 18<sup>th</sup>-19<sup>th</sup> Century </h1>
-      <p class="text-shadow fade-in delay-1">An immersive mobile guide through historic streets</p>
+      <h1 class="fade-in">Let's <span>haunt</span> the city</h1>
+      <p class="text-shadow fade-in delay-1">Discover Vilanova in 18<sup>th</sup>-19<sup>th</sup> Century. <br> An immersive mobile guide through historic streets</p>
       <a href="#features" class="btn rounded fade-in delay-2">Learn More</a>
     </div>
   </section> 
@@ -47,41 +53,41 @@
   
       <!-- Left Features -->
       <div class="feature-column">
-        <div class="info-item">
+        <div class="info-item slide_in">
           <img src="images/icons/icon_ghost.png" alt="" class="icon">
           <h3>Ghostly Guidance</h3>
           <p>Spirits lead your path and whisper forgotten truths.</p>
         </div>
-        <div class="info-item">
+        <div class="info-item slide_in">
           <img src="images/icons/icon_map.png" alt="" class="icon">
           <h3>Interactive Map</h3>
           <p>Walk Vilanova’s haunted streets with historical overlays.</p>
         </div>
-        <div class="info-item">
+        <div class="info-item slide_in">
           <img src="images/icons/icon_puzzle.png" alt="" class="icon">
           <h3>Puzzle & Memory</h3>
           <p>Restore broken posters and decipher emotion-driven riddles.</p>
         </div>
       </div>
   
-      <div class="device-mockup">
+      <div class="device-mockup slide_in">
         <img src="images/app-view.png" alt="App preview" class="full-phone-image">
       </div>
       
   
       <!-- Right Features -->
       <div class="feature-column">
-        <div class="info-item">
+        <div class="info-item slide_in">
           <img src="images/icons/icon_encoded.png" alt="" class="icon">
           <h3>Encoded Sermons</h3>
           <p>Decode sermons and unlock keys to the ghost realm.</p>
         </div>
-        <div class="info-item">
+        <div class="info-item slide_in">
           <img src="images/icons/icon_ar.png" alt="" class="icon">
           <h3>AR Hauntings</h3>
           <p>Witness long-lost statues return before your eyes.</p>
         </div>
-        <div class="info-item">
+        <div class="info-item slide_in">
           <img src="images/icons/icon_unlock.png" alt="" class="icon">
           <h3>Unlock Redemption</h3>
           <p>Build the ghost blaster and defeat the haunting spirit.</p>
@@ -97,31 +103,31 @@
       <div class="journey-flow">
 
         <!-- Stop 1 -->
-        <div class="stop-box">
+        <div class="stop-box slide_in">
           <div class="circle">1</div>
           <h3>Train Station</h3>
           <p>The ghosts escape from the statues. You meet the woman in red and receive the mission.</p>
         </div>
 
         <!-- Arrow 1 -->
-        <div class="arrow-img arrow-1">
+        <div class="arrow-img arrow-1 slide_in">
           <img src="images/arrow-line.png" alt="arrow to step 2">
         </div>
 
         <!-- Stop 2 -->
-        <div class="stop-box">
+        <div class="stop-box slide_in">
           <div class="circle">2</div>
           <h3>Biblioteca</h3>
           <p>Read the sermon, meet the preacher, and discover spiritual clues hidden in poetry and symbols.</p>
         </div>
 
         <!-- Arrow 2 -->
-        <div class="arrow-img arrow-2">
+        <div class="arrow-img arrow-2 slide_in">
           <img src="images/arrow-line.png" alt="arrow to step 3">
         </div>
 
         <!-- Stop 3 -->
-        <div class="stop-box">
+        <div class="stop-box slide_in">
           <div class="circle">3</div>
           <h3>Plaça de la Vila</h3>
           <p>The grand finale. Restore the last statue, face the final ghost, and bring peace to the city.</p>
@@ -131,7 +137,7 @@
     </div>
   </section>
 
-  <section id="trailer" class="content-section trailer-section">
+  <section id="trailer" class="content-section trailer-section slide_in">
     <h2 class="section-title">Watch the Trailer</h2>
     <div class="video-wrapper">
       <iframe 
@@ -147,48 +153,58 @@
   <section id="team" class="content-section team-section fade-in delay-1">
     <h2 class="section-title">Meet the Team</h2>
     <div class="team-grid">
-      <div class="team-card">
+      <div class="team-card slide_in">
         <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Alex photo">
         <h3>Alex</h3>
         <p>Web & App Development</p>
       </div>
-      <div class="team-card">
+      <div class="team-card slide_in">
         <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Marta photo">
         <h3>Marta</h3>
         <p>Project Management & Research</p>
       </div>
-      <div class="team-card">
+      <div class="team-card slide_in">
         <img src="https://images.pexels.com/photos/227294/pexels-photo-227294.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mia photo">
         <h3>Mia</h3>
         <p>Design & 3D Modelling</p>
       </div>
-      <div class="team-card">
+      <div class="team-card slide_in">
         <img src="https://images.pexels.com/photos/227294/pexels-photo-227294.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mihaela photo">
         <h3>Mihaela</h3>
         <p>Web & App Development</p>
       </div>
-      <div class="team-card">
+      <div class="team-card slide_in">
         <img src="https://images.pexels.com/photos/227294/pexels-photo-227294.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Romy photo">
         <h3>Romy</h3>
         <p>Design & 3D Modelling</p>
       </div>
     </div>
   </section>
-  
 
-  <section id="download" class="content-section slide-up delay-2">
-    <h2>Get the App</h2>
-    <p>Available on iOS and Android. Start your historical journey today.</p>
-    <div class="download-buttons">
-      <a href="/" tabIndex="0"><img class="bn45" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
-      <a href="/" tabIndex="0"><img class="bn45" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
-    </div>
-  </section>
+  <!--<section id="download" class="content-section slide-up delay-2">-->
+  <!--  <h2>Get the App</h2>-->
+  <!--  <p>Available on iOS and Android. Start your historical journey today.</p>-->
+  <!--  <div class="download-buttons">-->
+  <!--    <a href="/" tabIndex="0"><img class="bn45" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>-->
+  <!--    <a href="/" tabIndex="0"><img class="bn45" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>-->
+  <!--  </div>-->
+  <!--</section>-->
+  
+  <div id="modelDemo"></div>
 
   <footer>
     <p>&copy; 2025 Vilanova Explorer</p>
   </footer>
 
 <script src="script.js"></script>
+<script type="importmap">
+	{
+		"imports": {
+			"three": "./three.module.js",
+			"three/addons/": "https://github.com/mrdoob/three.js/tree/master/examples/jsm/"
+		}
+	}
+</script>
+<script type="module" src="./load3dModel.js"></script>
 </body>
 </html>
