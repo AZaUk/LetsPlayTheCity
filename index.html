@@ -18,7 +18,7 @@
     <a href="#team" class="header_button">Team</a>
 <!--    <a href="#download" class="header_button">Download</a>-->
   </header>
-
+  
   <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(20deg)"/>
   <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(40deg)"/>
   <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(60deg)"/>
@@ -27,23 +27,19 @@
   <img src="images/ghost.png" class="flying_ghost" style="filter: hue-rotate(120deg)"/>
 
   <section class="hero">
-    <!--<img class="phone-image top-right" src="images/phone_mockup.png" alt="Phone mockup top">-->
-    <!--<img class="phone-image bottom-left" src="images/phone_mockup.png" alt="Phone mockup bottom">-->
     <div class="overlay">
       <h1 class="fade-in">Let's <span>haunt</span> the city</h1>
       <p class="text-shadow fade-in delay-1">Discover Vilanova in 18<sup>th</sup>-19<sup>th</sup> Century. <br> An immersive mobile guide through historic streets</p>
       <a href="#features" class="btn rounded fade-in delay-2">Learn More</a>
     </div>
-  </section>
-
+  </section> 
 
   <section id="about" class="content-section slide-up about-section">
     <div class="about-container">
-      <img class="about-image" src="images/about.png" alt="App preview">
       <div class="about-text">
-        <h2>About the App</h2>
+        <h1>About the App</h1>
         <p>The Vilanova Explorer App brings the rich history of Vilanova i la Geltrú to life. Through AR, guided tours, and interactive maps, users can immerse themselves in the atmosphere of the 18th and 19th centuries. Whether you're a local, a tourist, or a history enthusiast, this app offers an engaging way to explore the past.</p>
-        <a href="#download" class="btn2 rounded">Download</a>
+        <a href="game" class="try_out_button rounded">Try out!</a>
       </div>
     </div>
   </section>
@@ -182,16 +178,20 @@
     </div>
   </section>
 
-  <!--<section id="download" class="content-section slide-up delay-2">-->
-  <!--  <h2>Get the App</h2>-->
-  <!--  <p>Available on iOS and Android. Start your historical journey today.</p>-->
-  <!--  <div class="download-buttons">-->
-  <!--    <a href="/" tabIndex="0"><img class="bn45" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>-->
-  <!--    <a href="/" tabIndex="0"><img class="bn45" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>-->
-  <!--  </div>-->
-  <!--</section>-->
+  
+  <div id="modelDemo">
+        <div class="model_viewer_instructions">
+            <div style="position: fixed; right: 16px; font-style: normal;pointer-events: none;">&#9432;</div>
 
-  <div id="modelDemo"></div>
+            <div class="desktop instruction"><b>Click + drag</b> to rotate the view</div>
+            <div class="desktop"><b>Scroll mouse</b> to zoom in/out</div>
+            <div class="desktop"><b>Secondary click + drag</b> to move the view</div>
+          
+            <div class="mobile instruction"><b>Touch + move</b> to rotate the view</div>
+            <div class="mobile"><b>Pinch</b> to zoom in/out</div>
+            <div class="mobile"><b>Two-finger drag</b> to move the view</div>
+        </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Vilanova Explorer</p>
