@@ -1,0 +1,54 @@
+/* Make body fill screen and hide overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Fullscreen AR canvas */
+a-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Simple overlay at the top */
+#overlay {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  z-index: 10;
+}
+
+/* Mini‑map container */
+#map-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  z-index: 999;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#mini-map {
+  width: 100%;
+  height: 100%;
+}
+
+a-image.non-interactive {
+  pointer-events: none !important;
+  touch-action: none !important;
+}

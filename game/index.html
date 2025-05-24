@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Game</title>
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!-- AR.js with proper MIME handling -->
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Overlay for status messages -->
+  <div id="overlay">Initializing AR…</div>
+  <div id="map-container">
+    <div id="mini-map"></div>
+  </div>
+
+  <!-- AR scene -->
+  <a-scene
+    embedded
+    arjs="sourceType: webcam; startAR: true; debugUIEnabled: false"
+    vr-mode-ui="enabled: false"
+    renderer="logarithmicDepthBuffer: true;"
+    gps-camera
+  >
+    <a-assets>
+      <img id="arrow-icon" src="../images/blue_arrow.png" />
+    </a-assets>
+  </a-scene>
+
+
+  <script src="./ar-utils.js"></script>
+  <script src="./mapbox.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
