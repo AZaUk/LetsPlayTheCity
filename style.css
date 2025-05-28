@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    overflow: hidden;
   margin: 0;
   font-family: "Fraunces", serif;
   font-style: italic;
@@ -48,7 +49,7 @@ canvas {
     .model_viewer_instructions .mobile {
         display: flex;
     }
-    
+
     .model_viewer_instructions .desktop {
         display: none;
     }
@@ -92,7 +93,7 @@ header {
     /*backdrop-filter: blur(24px) contrast(150%);*/
     /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 1px 2px 10px rgba(255, 255, 255, 0.3);*/
     /*border: 1px solid hsla(25, 20%, 20%, 0.5);*/
-    
+
     border: 2px solid white;
     mix-blend-mode: difference;
 }
@@ -102,7 +103,7 @@ header a {
     font-style: normal;
     font-size: 14px;
     /*color: hsl(25, 20%, 20%);*/
-    
+
     color: white;
     padding: 10px 0;
 }
@@ -127,6 +128,15 @@ header a:hover {
   align-items: center;
   text-align: center;
   padding: 0 32px;
+}
+
+.vilanova_buildings {
+    background: repeat-x 0% 0% / 20% 20% url('/images/vilanova.jpeg');
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: relative;
+  top: -20%;
 }
 
 h1 {
@@ -300,7 +310,25 @@ footer {
 }
 @media (max-width: 768px) {
     .about-text {
-        padding: 32px 64px;
+        padding: 32px;
+    }
+    .about-text h1 {
+        font-size: 64px;
+    }
+    .try_out_button {
+        padding: 20px 64px;
+    }
+    .model_viewer_instructions {
+        margin: 12px 12px 0 0;
+        right: 0;
+    }
+    .model_viewer_instructions .mobile {
+        font-size: 14px;
+    }
+    .model_viewer_instructions:hover {
+      width: auto;
+      height: auto;
+      padding: 12px 40px 12px 20px;
     }
   .about-container {
     flex-direction: column;
@@ -310,11 +338,11 @@ footer {
   .about-image {
     width: 100%;
   }
-  
+
   .flying_ghost {
       width: 200px;
   }
-  
+
   .phone-image.top-right {
     top: -140px;
     right: -120px;

@@ -36,7 +36,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth * 0.9, window.innerHeight * 0.85);
+    renderer.setSize(window.innerWidth * 0.9, typeof screen.orientation !== 'undefined' ? window.innerHeight * 0.6 : window.innerHeight * 0.85);
     renderer.setAnimationLoop(animate);
     renderer.shadowMap.enabled = true;
     container.appendChild(renderer.domElement);
